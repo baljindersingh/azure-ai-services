@@ -11,8 +11,8 @@ def main():
 
     try:
         # Get Configuration Settings
-        ls_prediction_endpoint = os.getenv('LS_ENDPOINT')
-        ls_prediction_key = os.getenv('LS_KEY')
+        ls_prediction_endpoint = os.getenv('SVC_ENDPOINT') # Service endpoint
+        ls_prediction_key = os.getenv('API_KEY') # API key
 
         # Get user input (until they enter "quit")
         userText = ''
