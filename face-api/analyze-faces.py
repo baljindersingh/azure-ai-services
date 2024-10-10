@@ -13,8 +13,8 @@ def main():
 
     try:
         # Get Configuration Settings
-        cog_endpoint = "https://azureaiservicesba.cognitiveservices.azure.com/"
-        cog_key = "8ab65eca83ce4b14b5123355d5a7c895"
+        cog_endpoint = os.getenv("SVC_ENDPOINT")
+        cog_key = os.getenv("API_KEY")
 
         # Authenticate Face client
         credentials = CognitiveServicesCredentials(cog_key)
