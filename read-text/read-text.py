@@ -14,8 +14,8 @@ def main():
 
     try:
         # Get Configuration Settings
-        ai_endpoint = "https://azureaiservicesba.cognitiveservices.azure.com/"
-        ai_key = "8ab65eca83ce4b14b5123355d5a7c895"
+        ai_endpoint = os.getenv("SVC_ENDPOINT")
+        ai_key = os.getenv("API_KEY")
 
         # Authenticate Azure AI Vision client
         cv_client = ImageAnalysisClient(
