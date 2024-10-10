@@ -7,10 +7,10 @@ from azure.ai.language.questionanswering import QuestionAnsweringClient
 def main():
     try:
         # Get Configuration Settings
-        ai_endpoint = "https://instancebs1.cognitiveservices.azure.com" #os.getenv('AI_SERVICE_ENDPOINT')
-        ai_key = "c0cf3fa5f66e46d8bb33d87c42dcb485" #os.getenv('AI_SERVICE_KEY')
-        ai_project_name = "LearnFAQ" #os.getenv('QA_PROJECT_NAME')
-        ai_deployment_name = "production" #os.getenv('QA_DEPLOYMENT_NAME')
+        ai_endpoint = os.getenv('AI_SERVICE_ENDPOINT')
+        ai_key = os.getenv('AI_SERVICE_KEY')
+        ai_project_name = os.getenv('QA_PROJECT_NAME')
+        ai_deployment_name = os.getenv('QA_DEPLOYMENT_NAME')
 
          # Create client using endpoint and key
         credential = AzureKeyCredential(ai_key)
