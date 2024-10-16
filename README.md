@@ -1,2 +1,4 @@
-# azure-ai-services
-Repository for code related to Azure AI Services
+# Azure AI Services
+Repository for python code implementing different Azure AI Services
+
+Speech - Recognize and synthesize speech
